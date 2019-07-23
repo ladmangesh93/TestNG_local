@@ -13,13 +13,13 @@ public class BaseAccess {
 		System.out.println("In Base Class");
 		System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.navigate().to("https://www.testandquiz.com/selenium/testing.html");
+		driver.navigate().to("http://demo.guru99.com/test/newtours/register.php");
 		driver.manage().window().maximize();
 	}
 	
-	@AfterClass
-	public void exit()
-	{
-		driver.close();
-	}
+//	@AfterClass
+//	public void exit()
+//	{
+//		driver.close();
+//	}
 }
